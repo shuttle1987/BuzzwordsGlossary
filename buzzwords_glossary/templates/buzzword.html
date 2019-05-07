@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> Buzzword: {{ this:term }} </title>
-  </head>
-  <body>
-  {{ this:content }}
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}{{ this:term }}{% endblock %}
+
+{% block content %}
+{{ this:content }}
+{% endblock %}

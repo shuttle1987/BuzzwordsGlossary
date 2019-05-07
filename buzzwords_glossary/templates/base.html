@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block extra_head %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <h1>{% block header %}Welcome!{% endblock %}</h1>
+        </header>
+        <main>
+        {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>&copy; 2019</p>
+        </footer>
+        {% block footer_scripts %}{% endblock %}
+    </body>
+</html>
