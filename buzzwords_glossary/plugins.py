@@ -5,5 +5,5 @@ from gilbert.content import Templated, Content
 
 class BuzzwordSummary(Templated, Content):
     term: str
-    posted: typing.Union[None, datetime]
+    posted: datetime = datetime.now()
     template: str = "buzzword.html"
